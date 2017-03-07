@@ -7,9 +7,17 @@ import data3 from '../components/data/level3';
 
 
 // tags:
+//   abilities
 //   aspirations
 //   family
+//   finance
+//   history
+//   interests
+//   lovelife
+//   memory
 //   personality
+//   politics
+//   preferences
 
 class App extends React.Component<any,any> {
   render() {
