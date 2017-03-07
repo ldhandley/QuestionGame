@@ -21,11 +21,14 @@ import data3 from '../components/data/level3';
 
 class App extends React.Component<any,any> {
   render() {
-    var all_data = data1.concat(data2).concat(data3);
 
     return (
       <div>
-      	<QuestionViewer data={all_data} />
+      	<QuestionViewer 
+          level1={data1} 
+          level2={data2} 
+          level3={data3}
+        />
       </div>
     );
   };

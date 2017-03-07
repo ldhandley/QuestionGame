@@ -28,34 +28,39 @@ class QuestionViewer extends React.Component<any, any> {
     return (
       <button 
         style={{
-	  border: 'none',
-	  textAlign: 'center',
-	  padding: '1.2vw 3vw 1vw',
-	  borderRadius: '0.2vw',
-	  fontWeight: 'bold',
-	  textTransform: 'uppercase',
-	  margin: '1.3vw',
-	  outline: 'none',
-	  cursor: 'pointer',
-	  transition: 'all .15s',
-	  color: 'white',
-          background: this.chooseColor(n)[0],
-	  boxShadow: '0px 0.4vw 0px '+ this.chooseColor(n)[1]
-	}}
-	onClick={()=>{
+    	  border: 'none',
+	      textAlign: 'center',
+	      padding: '1.2vw 3vw 1vw',
+	      borderRadius: '0.2vw',
+    	  fontWeight: 'bold',
+	      textTransform: 'uppercase',
+    	  margin: '1.3vw',
+    	  outline: 'none',
+	      cursor: 'pointer',
+	      transition: 'all .15s',
+	      color: 'white',
+        background: this.chooseColor(n)[0],
+	      boxShadow: '0px 0.4vw 0px '+ this.chooseColor(n)[1]
+	      }}
+	      onClick={()=>{
           this.setDepth(n);
-	}}>
-	{n}
+	      }}>
+	      {n}
       </button>
     );
   };
 
   // Return all questions in the data set where the intimacy depth is the same as what's currently saved in state 
   getData(){
-    return this.props.data
-      .filter((d)=>{
-        return (d.depth === this.state.depth);
-      });
+    if (this.state.depth === 1){
+      return this.props.level1;
+    }
+    else if (this.state.depth === 2){
+      return this.props.level2;
+    }
+    else if (this.state.depth === 3){
+      return this.props.level3;
+    }
   };
 
   setDepth(depth){
@@ -74,18 +79,18 @@ class QuestionViewer extends React.Component<any, any> {
   render() {
     return (
       <div>
-	<div onClick={this.next.bind(this)}>
-	  <QuestionAndImage thing={this.getData()[this.state.current]} />
-	</div>
-	<div style={{textAlign: 'center'}}>
-	  <h1>Intimacy level: </h1>
-	  {this.depthButton(1)}
-	  {this.depthButton(2)}
-	  {this.depthButton(3)}
-	  <div>
-	    {'There are ' + this.getData().length + ' questions at this intimacy level.'}
-	  </div>
-	</div>
+	      <div onClick={this.next.bind(this)}>
+	        <QuestionAndImage thing={this.getData()[this.state.current]} />
+	      </div>
+	      <div style={{textAlign: 'center'}}>
+	        <h1>Intimacy level: </h1>
+	        {this.depthButton(1)}
+	        {this.depthButton(2)}
+	        {this.depthButton(3)}
+	        <div>
+	          {'There are ' + this.getData().length + ' questions at this intimacy level.'}
+	        </div>
+	      </div>
       </div>
     );
   }
