@@ -66,13 +66,9 @@ class QuestionViewer extends React.Component<any, any> {
 	        <QuestionAndImage thing={this.getData()[this.state.current]} />
 	      </div>
 	      <div style={{textAlign: 'center'}}>
-	        <h1>Intimacy level: </h1>
 	        <DepthButton depth={1} depthSelectionCallback={this.depthSelection.bind(this)} />
 	        <DepthButton depth={2} depthSelectionCallback={this.depthSelection.bind(this)} />
 	        <DepthButton depth={3} depthSelectionCallback={this.depthSelection.bind(this)} />
-          <div>
-	          {'There are ' + this.getData().length + ' questions at this intimacy level.'}
-	        </div>
 	      </div>
       </div>
     );

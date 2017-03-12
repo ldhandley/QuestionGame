@@ -23,7 +23,7 @@ class App extends React.Component<any,any> {
   render() {
 
     return (
-      <div>
+      <div style={{width:"100%"}}>
       	<QuestionViewer 
           level1={data1} 
           level2={data2} 

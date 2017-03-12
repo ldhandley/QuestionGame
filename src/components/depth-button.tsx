@@ -41,7 +41,7 @@ class DepthButton extends React.Component<any,any>{
 	      onClick={()=>{
           this.props.depthSelectionCallback(this.props.depth);
 	      }}>
-	      {this.props.depth}
+	      {"Level " + this.props.depth}
       </button>
     );
   };
