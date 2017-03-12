@@ -1,4 +1,5 @@
 interface IQuestion{
+  id: string,
   img: string,
   question: string,
   color?: string,

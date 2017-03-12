@@ -2,15 +2,13 @@ import * as React from 'react';
 import DepthButton from './depth-button';
 import QuestionAndImage from './question-and-image';
 
-//TODO: UPDATE questions with GUID attributes and values: https://www.guidgenerator.com/online-guid-generator.aspx
-
 class QuestionViewer extends React.Component<any, any> {
   constructor(props){
     super(props);
     this.state = {};
     this.state.current = 0;
     this.state.depth = 1;
-    this.state.used = [];
+    this.state.used = [this.getData()[this.state.current].id];
   };
 
   // Return all questions in the data set where the intimacy depth is the same as what's currently saved in state 
@@ -35,20 +33,29 @@ class QuestionViewer extends React.Component<any, any> {
 
   next(){
     var choosing=false;
+    var counter=0;
 
     //Choose a random index
-    while(choosing == false){
+    //and arbitrary counter is less than 500 (CAN'T HAVE MORE THAN 500 QUESTIONS???) 
+    while(choosing == false && counter < 500){
       var new_question_index = Math.floor(Math.random()*this.getData().length)
-      if(!(this.state.used.indexOf(new_question_index) >= 0)){
+      //If the id of the question in the data at that index doesn't exist in used...
+      if(!(this.state.used.indexOf(this.getData()[new_question_index].id) >= 0)){
         choosing = true;
       }
-     
+      counter++;
+      //get out of the while loop
     }
     
-    this.setState({
-      current: new_question_index,
-      used: this.state.used.concat([new_question_index])
-    });
+    if(choosing == true){
+      //and set the state for current and update the used array
+      this.setState({
+        current: new_question_index,
+        used: this.state.used.concat(this.getData()[new_question_index].id)
+      });
+    }
+
+    console.log("These have been used:" + this.state.used)
 
   };
 
