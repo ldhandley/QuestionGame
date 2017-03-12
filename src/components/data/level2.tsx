@@ -287,7 +287,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: 'cba96c61-e291-4cde-a6a1-ccd266b45414',
-    img:"http://mindandmentality.com/wp-content/uploads/2015/03/think-positive.jpg",
+    img:"https://www.callcentrehelper.com/images/stories/2010/2015/08/positive.jpg",
     question: "Alternate sharing something you consider a positive characteristic of the the people in your group. Share a total of two items with each person.",
     depth: 2,
     tags: [
