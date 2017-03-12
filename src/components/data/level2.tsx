@@ -97,7 +97,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: '8938a022-2284-41ea-9ec8-10975e7bcf2b',
-    img: "http://combiboilersleeds.com/images/resistance/resistance-1.jpg",
+    img: "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full/public/blogs/130326/2013/10/134511-134329.jpg?itok=EjrVL-zP",
     question: "What's something you resisted doing that you ended up liking?",
     color: "white",
     depth: 2,
@@ -174,7 +174,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: '4a686760-7f7b-4d0e-8b40-e7317683eebf',
-    img:"http://vignette4.wikia.nocookie.net/gameofthrones/images/9/97/The_Wall_from_the_south.jpg/revision/latest?cb=20150323201042",
+    img:"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAW3AAAAJGRhM2YyM2FhLTE1YjMtNDU5ZS04MjNhLTM2ZGU1NWQ2NmU0NA.jpg",
     question: "In one word, what's standing between you and your biggest goal?",
     depth: 2,
     tags: [
@@ -303,7 +303,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: 'ce2dc065-748e-412b-9e54-b3a286013099',
-    img:"",
+    img:'http://files.differencebetween.com/wp-content/uploads/2016/03/Difference_Between_CloseFriend_BestFriend_Image1.jpg',
     question: "If you were going to become a close friend with the person to your right, please share what would be important for him or her to know.",
     depth: 2,
     tags: [
@@ -311,7 +311,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: '216fb7c3-7aa9-4dbe-90e2-7a303537c0e3',
-    img:"",
+    img:'http://wmsmile.com/wp-content/uploads/2015/12/smiling-group-of-people.jpg',
     question: "Tell the person to your right something that you like about them already.",
     depth: 2,
     tags: [
@@ -319,7 +319,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: '4288d5d9-bef3-4fef-a854-089612862ae9',
-    img:"",
+    img:'https://s-media-cache-ak0.pinimg.com/originals/64/d4/e7/64d4e7f648c93f7c98203034a5d79923.jpg',
     question: "What, if anything, is too serious to be joked about?",
     depth: 2,
     tags: [
@@ -330,7 +330,7 @@ var data2:Array<IQuestion> = [
   },
   {
     id: '5bd98256-9bc6-4c5f-a5bd-60862c646c42',
-    img:"",
+    img:'http://static.wixstatic.com/media/875d61_a96bf8a3f9384749b9a3830ba35ac918.jpg',
     question: "Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?",
     depth: 2,
     tags: [

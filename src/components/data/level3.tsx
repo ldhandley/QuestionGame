@@ -113,7 +113,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: '2d8790dc-e868-4d7d-ac2b-1c881509e17b',
-    img:"",
+    img:'http://userfiles.steadyhealth.com/userfiles/articles/couple-sunset-talk.jpg',
     question: "Complete this sentence: 'I wish I had someone with whom I could share ... '",
     depth: 3,
     tags: [
@@ -122,7 +122,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: '1e24c99c-d001-4d4d-91ae-804afd3e6f96',
-    img:"",
+    img:'https://image.freepik.com/free-photo/top-view-of-friends-having-fun_1098-980.jpg',
     question: "Tell the person to your right what you like about them; be very honest this time, saying things that you might not say to someone you've just met.",
     depth: 3,
     tags: [
@@ -130,7 +130,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: '12dbc6f3-cb02-4ddc-ac5d-5c94d73b693f',
-    img:"",
+    img:'https://starpointcounselingcenter.files.wordpress.com/2014/10/1372206815_friend-venting-consoling-11070802.jpg',
     question: "When did you last cry in front of another person? By yourself?",
     depth: 3,
     tags: [
@@ -139,7 +139,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: '8ab90458-1d84-4248-b11d-7e9fe82f50b3',
-    img:"",
+    img:'https://mdhistoricaltrust.files.wordpress.com/2015/02/1-img_7639crop.jpg',
     question: "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven’t you told them yet?",
     depth: 3,
     tags: [
@@ -148,7 +148,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: '5c2e14bc-6e29-45ae-a71e-9d9c23808b4a',
-    img:"",
+    img:'http://photos.jibble.org/Places/The%20Netherlands/Arnhem%20Oosterbeek%20War%20Cemetary/P1000434%20Gravestones.JPG',
     question: "Of all the people in your family, whose death would you find most disturbing? Why?",
     depth: 3,
     tags: [
@@ -157,7 +157,7 @@ var data3:Array<IQuestion> = [
   },
   {
     id: 'f214c714-049d-4e8c-b697-b966a1228230',
-    img:"",
+    img:'http://ell.h-cdn.co/assets/cm/14/52/980x490/549b4f6c36de7_-_elle-code-red-h.jpg',
     question: "Share a personal problem and ask the person to your right’s advice on how he or she might handle it. Also, ask your partner to reflect back to you how you seem to be feeling about the problem you have chosen.",
     depth: 3,
     tags: [
